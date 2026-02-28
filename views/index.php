@@ -1,5 +1,5 @@
 <?php
-include 'conexion.php';
+include '../config/conexion.php'; // Agrega ../ para salir de la carpeta views
 // Consulta segura que permitira traer los productos
 $query = $pdo->query("SELECT * FROM productos");
 $productos = $query->fetchAll(PDO::FETCH_OBJ);
@@ -43,7 +43,7 @@ $productos = $query->fetchAll(PDO::FETCH_OBJ);
                             </td>
                             <td>
                                 <a href="editar.php?id=<?= $p->id ?>" class="btn btn-warning btn-sm">✏️ Editar</a>
-                                <a href="eliminar.php?id=<?= $p->id ?>" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de eliminar este producto?')">🗑️ Eliminar</a>
+                                <a href="../actions/eliminar.php?id=<?= $p->id ?>" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de eliminar este producto?')">🗑️ Eliminar</a>
                             </td>
                         </tr>
                         <?php endforeach; ?>

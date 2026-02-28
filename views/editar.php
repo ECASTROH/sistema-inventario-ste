@@ -1,5 +1,5 @@
 <?php
-include 'conexion.php';
+include '../config/conexion.php';
 
 // 1. Obtener el ID y los datos actuales del producto
 if (!isset($_GET['id'])) {
