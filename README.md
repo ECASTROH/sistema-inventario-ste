@@ -2,7 +2,7 @@
 
 ## Descripción del Sistema
 Sistema web CRUD desarrollado en PHP y MySQL para la gestión de productos tecnológicos. 
-El proyecto cumple con los requisitos de validación de negocio (stock no negativo) y arquitectura MVC básica.
+El proyecto cumple con los requisitos de validación de negocio (stock no negativo) y arquitectura organizada por capas (Vistas, Configuración, Acciones, Base de Datos).
 
 ## Requisitos del Entorno
 * **XAMPP:** Versión 8.0 o superior (con Apache y MySQL iniciados).
@@ -16,16 +16,16 @@ El proyecto cumple con los requisitos de validación de negocio (stock no negati
 2. **Base de Datos:**
    - Abra **phpMyAdmin** (`http://localhost/phpmyadmin`).
    - Cree una nueva base de datos llamada: `inventario_ste`.
-   - Importe el script SQL ubicado en la carpeta del proyecto: `sql/database.sql`.
+   - Importe el script SQL ubicado en la carpeta: `database/database.sql`.
 
 3. **Configuración:**
-   - Verifique que el archivo `conexion.php` tenga las credenciales por defecto de XAMPP:
+   - Verifique que el archivo `config/conexion.php` tenga las credenciales por defecto de XAMPP:
      - Usuario: `root`
      - Contraseña: `(vacío)`
 
 4. **Ejecución:**
-   - Abra su navegador e ingrese a:
-     `http://localhost/inventario_stenetworksolutions`
+   - Abra su navegador e ingrese a la siguiente ruta (donde están las vistas):
+     `http://localhost/inventario_stenetworksolutions/views/`
 
 ## Autor
 **Eduardo Castro** - Ingeniería en Sistemas Inteligentes - Programación de Sistemas Web
