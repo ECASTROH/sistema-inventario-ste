@@ -1,5 +1,5 @@
 <?php
-include 'conexion.php';
+include '../config/conexion.php';
 
 // Verificamos si nos enviaron el ID
 if (isset($_GET['id'])) {
@@ -17,6 +17,6 @@ if (isset($_GET['id'])) {
     }
 } else {
     // Si intentan entrar sin ID, retorna al inicio
-    header('Location: index.php');
+    header('Location: ../views/index.php');
 }
 ?>
