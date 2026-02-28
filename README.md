@@ -1,45 +1,49 @@
-# Sistema de Inventario y Ventas - STE Network Solutions
+# Sistema de Inventario - STE Network Solutions
 
-## Descripción del Sistema
-Sistema web CRUD desarrollado en PHP y MySQL para la gestión de productos tecnológicos. 
-El proyecto cumple con los requisitos de validación de negocio (stock no negativo) y arquitectura organizada por capas (Vistas, Configuración, Acciones, Base de Datos).
+## Descripción del Proyecto
+Sistema de gestión de inventario desarrollado en **PHP Nativo (PDO)** con una arquitectura profesional por capas.
+Esta versión incluye desarrollo en seguridad, experiencia de usuario (UI/UX) y validaciones de negocio.
 
-## Requisitos del Entorno
-* **XAMPP:** Versión 8.0 o superior (con Apache y MySQL iniciados).
-* **Navegador Web:** Chrome, Edge o Firefox.
+## Características
+* **Seguridad:** Protección contra ataques **XSS (Cross-Site Scripting)** en todos los formularios.
+* **Interfaz Moderna:** Diseño responsivo utilizando **Bootstrap 5** y **Bootstrap Icons**.
+* **Feedback Visual:** Badges de colores automáticos para el estado del stock (Agotado/Bajo/Normal).
+* **Validaciones Robustas:** Control de stock negativo y precios lógicos tanto en Backend como en Frontend.
+* **Confirmaciones:** Alertas interactivas con JavaScript antes de eliminar registros.
 
-## Instrucciones de Instalación en XAMPP
-1. **Despliegue de Archivos:**
-   - Asegúrese de que la carpeta del proyecto esté ubicada en:
-     `C:\xampp\htdocs\inventario_stenetworksolutions`
+## Tecnologías
+* **Entorno de Desarrollo:** XAMPP (Apache + MySQL/MariaDB)
+* **Lenguaje:** PHP 8 (Nativo)
+* **Frontend:** Bootstrap 5 (CSS y JS)
+* **Control de Versiones:** Git & GitHub
+
+## Instalación en XAMPP
+1. **Despliegue:**
+   - Coloca la carpeta del proyecto en: `C:\xampp\htdocs\inventario_stenetworksolutions`
 
 2. **Base de Datos:**
-   - Abra **phpMyAdmin** (`http://localhost/phpmyadmin`).
-   - Cree una nueva base de datos llamada: `inventario_ste`.
-   - Importe el script SQL ubicado en la carpeta: `database/database.sql`.
+   - Crea la BD `inventario_ste` en phpMyAdmin.
+   - Importa el script: `database/database.sql`.
 
 3. **Configuración:**
-   - Verifique que el archivo `config/conexion.php` tenga las credenciales por defecto de XAMPP:
-     - Usuario: `root`
-     - Contraseña: `(vacío)`
+   - El sistema conecta automáticamente con usuario `root` y sin contraseña (default de XAMPP) en `config/conexion.php`.
 
 4. **Ejecución:**
-   - Abra su navegador e ingrese a la siguiente ruta (donde están las vistas):
-     `http://localhost/inventario_stenetworksolutions/views/`
+   - Ingresa a: `http://localhost/inventario_stenetworksolutions/views/`
 
 ## Capturas del Sistema
 
-**Lista de Productos**
-![Vista Principal](screenshoots/LIST.png)
+### Panel Principal (Dashboard)
+![Lista de Productos](screenshoots/LIST.png)
 
-**Edición de Producto**
-![Editar Producto](screenshoots/EDIT.png)
+### Gestión de Productos
+![Formulario](screenshoots/EDIT.png)
 
-**Validación de Stock**
+### Validaciones de Seguridad
 ![Error de Stock](screenshoots/stock.png)
 
-**Eliminar Producto**
-![Confirmación de Eliminación](screenshoots/DELETE.png)
+### Gestión de productos
+![Eliminar Item](screenshoots/DELETE.png)
 
-## Autor
-**Eduardo Castro** - Ingeniería en Sistemas Inteligentes - Programación de Sistemas Web
+
+**Autor:** Eduardo Castro | Ingeniería en Sistemas Inteligentes | Ecotec On Line
