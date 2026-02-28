@@ -27,5 +27,19 @@ El proyecto cumple con los requisitos de validación de negocio (stock no negati
    - Abra su navegador e ingrese a la siguiente ruta (donde están las vistas):
      `http://localhost/inventario_stenetworksolutions/views/`
 
+## Capturas del Sistema
+
+**Lista de Productos**
+![Vista Principal](screenshoots/LIST.png)
+
+**Edición de Producto**
+![Editar Producto](screenshoots/EDIT.png)
+
+**Validación de Stock**
+![Error de Stock](screenshoots/stock.png)
+
+**Eliminar Producto**
+![Confirmación de Eliminación](screenshoots/DELETE.png)
+
 ## Autor
 **Eduardo Castro** - Ingeniería en Sistemas Inteligentes - Programación de Sistemas Web
